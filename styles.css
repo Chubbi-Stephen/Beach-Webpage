@@ -224,6 +224,7 @@ header {
 .roomSection {
   text-align: center;
   margin: 5rem;
+  /* overflow: hidden; */
 }
 
 .roomSection h2 {
@@ -314,4 +315,83 @@ header {
   width: 100%;
   height: 30%;
   object-fit: cover;
+}
+
+/*********************** FACILITIES ****************************/
+
+.facilities {
+  width: 100%;
+  height: 100vh;
+}
+.facilities img {
+  width: 100%;
+  height: 44vh;
+  object-fit: cover;
+}
+
+.facilities h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Baloo Da 2", serif;
+  line-height: 2.9rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.facilities h6 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.17rem;
+}
+
+.faci-intro {
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+  background: #926239;
+  margin-left: 10%;
+  top: -12%;
+  opacity: 0;
+  animation: moveIntro 1s 0.9s forwards;
+}
+
+@keyframes moveIntro {
+  0% {
+    transform: translatex(40rem) rotatex(20deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+.faci-show {
+  width: 87%;
+  height: 30vh;
+  margin: 4% 10%;
+}
+
+.faci-show #left-img {
+  width: 45%;
+  height: 30vh;
+  float: left;
+  object-fit: cover;
+}
+.faci-show #right-img {
+  width: 46.3%;
+  height: 13vh;
+  float: left;
+  object-fit: cover;
+  margin-left: 2.5rem;
+}
+.faci-show #share-img {
+  width: 22.5%;
+  height: 13vh;
+  float: left;
+  object-fit: cover;
+  margin-left: 2.5rem;
+  margin-top: 3.3rem;
 }
