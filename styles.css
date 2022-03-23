@@ -322,10 +322,11 @@ header {
 .facilities {
   width: 100%;
   height: 100vh;
+  background-color: #eee;
 }
 .facilities img {
   width: 100%;
-  height: 44vh;
+  height: 40vh;
   object-fit: cover;
 }
 
@@ -344,6 +345,7 @@ header {
   font-weight: 700;
   line-height: 1.8rem;
   letter-spacing: 0.17rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .faci-intro {
@@ -371,25 +373,27 @@ header {
 .faci-show {
   width: 87%;
   height: 30vh;
-  margin: 4% 10%;
+  margin: 3% 10%;
 }
 
 .faci-show #left-img {
   width: 45%;
-  height: 30vh;
-  float: left;
+  height: 40vh;
   object-fit: cover;
+  float: left;
 }
+
 .faci-show #right-img {
   width: 46.3%;
-  height: 13vh;
-  float: left;
+  height: 19vh;
   object-fit: cover;
+  float: left;
   margin-left: 2.5rem;
 }
+
 .faci-show #share-img {
   width: 22.5%;
-  height: 13vh;
+  height: 16vh;
   float: left;
   object-fit: cover;
   margin-left: 2.5rem;
