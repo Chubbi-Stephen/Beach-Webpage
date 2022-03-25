@@ -322,7 +322,7 @@ header {
 .facilities {
   width: 100%;
   height: 100vh;
-  background-color: #eee;
+  background-color: rgb(240, 236, 236);
 }
 .facilities img {
   width: 100%;
@@ -381,6 +381,8 @@ header {
   height: 40vh;
   object-fit: cover;
   float: left;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.73);
+  border-radius: 0.6rem;
 }
 
 .faci-show #right-img {
@@ -389,6 +391,8 @@ header {
   object-fit: cover;
   float: left;
   margin-left: 2.5rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.73);
+  border-radius: 0.6rem;
 }
 
 .faci-show #share-img {
@@ -398,4 +402,239 @@ header {
   object-fit: cover;
   margin-left: 2.5rem;
   margin-top: 3.3rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.73);
+  border-radius: 0.6rem;
+}
+/* I WANT TO SEE IF I CAN USE LINEAR GRADIENT TO DO THE OVERLAY */
+#facilities div + div .view {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/beach-relax.jpg");
+  width: 22.5%;
+  height: 16vh;
+  float: left;
+  object-fit: cover;
+  margin-left: 2.5rem;
+  margin-top: 3.3rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.73);
+  border-radius: 0.6rem;
+  display: flex;
+  position: relative;
+}
+
+#facilities div + div .view h3 {
+  color: #ddd;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Baloo Da 2", serif;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.43);
+  line-height: 2.9rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.view {
+  transition: all 0.5s;
+}
+
+#facilities div + div .view:hover {
+  box-shadow: 3px 5px 13px 3px rgba(0, 0, 0, 0.93);
+  cursor: pointer;
+}
+
+/********************* ACTIVITIES ******************************/
+
+.activities {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(240, 236, 236);
+}
+.activities img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.activities h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Baloo Da 2", serif;
+  line-height: 2.9rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.activities h6 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.17rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.acti-intro {
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+  background: #926239;
+  margin-left: 10%;
+  top: -12%;
+  opacity: 0;
+  animation: moveIntro 1s 0.9s forwards;
+}
+
+.acti-show {
+  width: 87%;
+  height: 30vh;
+  margin: 3% 10%;
+}
+
+.acti-show div {
+  width: 20%;
+  margin: 1rem;
+  float: left;
+}
+
+.acti-show div img {
+  height: 10rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 0.6rem;
+  transition: all 0.5s;
+}
+
+.acti-show div img:hover {
+  box-shadow: 3px 5px 13px 3px rgba(0, 0, 0, 0.93);
+}
+
+.acti-show div p {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.17rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+/******************************* CONTACT ***********************/
+
+.contact {
+  width: 100%;
+  height: 40vh;
+  background-color: #444;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contactBox {
+  width: 18rem;
+  height: 20rem;
+  background-color: #fff;
+  margin-left: 25%;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+  padding: 2rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.43);
+}
+
+.contactBox h2,
+h3,
+h6 {
+  font-family: "Baloo Da 2", serif;
+  line-height: 2.4rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.contactBox h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.contactBox h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.contactBox h6 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #926239;
+}
+
+.contactBox p {
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Josefin Slab", serif;
+}
+
+.contactBox p span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #926239;
+}
+
+/************************************* BOOKINGS ********************/
+
+.bookings {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #926239;
+}
+
+.input {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+}
+
+.bookings h2 {
+  width: 50%;
+  font-size: 2.3rem;
+  font-weight: 800;
+  font-family: "Baloo Da 2", serif;
+  line-height: 2.4rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+  margin: 0 10%;
+}
+
+.input input {
+  width: 60rem;
+  padding: 1.3rem;
+  text-align: center;
+  width: 30%;
+  margin: 0% 5%;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.43);
+}
+.input button {
+  padding: 0.7rem;
+  text-align: center;
+  color: #fff;
+  background-color: #222;
+  width: 40%;
+  margin: 0% 5%;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.43);
+  transition: all 0.5s;
+}
+
+.input button:hover {
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.93);
+  cursor: pointer;
 }
