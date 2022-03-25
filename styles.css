@@ -237,6 +237,7 @@ header {
 .roomSection p {
   font-size: 2.1rem;
   font-family: "Josefin Slab", serif;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .roomContainer {
@@ -405,7 +406,7 @@ header {
   box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.73);
   border-radius: 0.6rem;
 }
-/* I WANT TO SEE IF I CAN USE LINEAR GRADIENT TO DO THE OVERLAY */
+
 #facilities div + div .view {
   background-position: center;
   background-repeat: no-repeat;
@@ -647,4 +648,89 @@ h6 {
 .input button:hover {
   box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.93);
   cursor: pointer;
+}
+
+/*************************** FOOTER *****************************/
+
+.bottom {
+  width: 100%;
+  height: 50vh;
+}
+
+.bottomHead {
+  width: 100%;
+  height: 85%;
+  background-color: #333;
+  display: flex;
+}
+
+.bottomHead div {
+  color: #fff;
+  width: 23%;
+  margin: 3%;
+  font-size: 1.2rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 300;
+  line-height: 1.7rem;
+  letter-spacing: 0.13rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.bottomHead div h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 1.3rem 0 1.4rem 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.link p {
+  margin: 1.4rem 0 1.4rem 0;
+}
+
+.link p a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.bottomTail {
+  width: 100%;
+  height: 15%;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+}
+
+.bottomTail p {
+  width: 100%;
+  margin: 10%;
+  font-size: 1.3rem;
+  display: flex;
+  font-family: "Josefin Slab", serif;
+  color: #fff;
+  letter-spacing: 0.13rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.bottomTail p + p {
+  /* width: 100%; */
+  justify-content: flex-end;
+}
+
+.follow i {
+  font-size: 1.5rem;
+  margin: 1.6rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.follow i:hover {
+  background-color: #926239;
 }
