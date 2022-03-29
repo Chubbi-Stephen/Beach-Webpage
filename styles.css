@@ -157,10 +157,12 @@ header {
   right: -40rem;
   background-color: #fff;
   transition: right 0.5s;
+  overflow: hidden;
 }
 
 .change .sidebar {
   right: 0;
+  overflow: hidden;
 }
 
 .menu {
@@ -407,7 +409,7 @@ header {
   border-radius: 0.6rem;
 }
 
-#facilities div + div .view {
+.view {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -691,6 +693,12 @@ h6 {
 .link p a {
   color: #fff;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.link p a:hover {
+  color: #926239;
+  font-size: 1.4rem;
 }
 
 .bottomTail {
@@ -728,9 +736,10 @@ h6 {
   justify-content: center;
   border-radius: 50%;
   align-items: center;
-  transition: background-color 0.3s;
+  transition: all 0.5s;
 }
 
 .follow i:hover {
   background-color: #926239;
+  box-shadow: 3px 3px 13px 2px rgba(0, 0, 0, 0.43);
 }
